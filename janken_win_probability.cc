@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
   int A,B,rare;
-  double Awincount;
+  double A_win_count;
   std::cout << "A君とB君がじゃんけんします。A君の勝率を見ていきます" << '\n';
   srand((unsigned int)time(NULL));  //時間による乱数の種の生成
 
@@ -17,13 +17,13 @@ int main() {
     }
     else if((A+2)%3==B){
       // std::cout << "A win!!" << '\n';
-      Awincount++;
+      A_win_count++;
     }
     else if((B+2)%3==A){
       // std::cout << "B win!!" << '\n';
     }
     if(i%11111==0){
-      std::cout << "A君の勝率は" << Awincount/(i+1.0) << '\n';
+      std::cout << "A君の勝率は" << A_win_count/(i+1.0) << '\n';
     }
   }
   return 0;
